@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="amcharts.js"></script>
+		<script type="text/javascript" src="serial.js"></script>
+		<script type="text/javascript" src="pie.js"></script>
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"colorField": "color",
+							"fillAlphas": 1,
+							"id": "AmGraph-1",
+							"lineColorField": "color",
+							"title": "graph 1",
+							"type": "column",
+							"valueField": "column-1"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "count"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 12,
+							"text": "Neighbourhood Group retail count"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "Central Region",
+							"column-1": 6301
+						},
+						{
+							"category": "West Region",
+							"column-1": 539
+						},
+						{
+							"category": "East Region",
+							"column-1": 508
+						},
+						{
+							"category": "North-East Region",
+							"column-1": 344
+						},
+						{
+							"category": "North Region",
+							"column-1": 203
+						}
+					]
+				}
+			);
+		</script>
+		
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv2",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"colorField": "color",
+							"fillAlphas": 1,
+							"id": "AmGraph-1",
+							"lineColorField": "color",
+							"title": "graph 1",
+							"type": "column",
+							"valueField": "column-1"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "Average price"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 12,
+							"text": "Average price of private room by Neighbourhood "
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "North-East Region",
+							"column-1": 80.06296,
+							"color": "#B0DE09"
+						},
+						{
+							"category": "North Region",
+							"column-1": 82.3546,
+							"color": "#B0DE09"
+						},
+						{
+							"category": "Central Region",
+							"column-1": 114.47408,
+							"color": "#B0DE09"
+						},
+						{
+							"category": "East Region",
+							"column-1": 117.23497,
+							"color": "#B0DE09"
+						},
+						{
+							"category": "West Region",
+							"column-1": 117.82539,
+							"color": "#B0DE09"
+						}
+					]
+				}
+			);
+		</script>
+		
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv6",
+				{
+					"type": "pie",
+					"angle": 12,
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"depth3D": 15,
+					"titleField": "category",
+					"valueField": "column-1",
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "Multiple property owners",
+							"column-1": "27.3163528977",
+							"color": "#008000"
+						},
+						{
+							"category": "Single property owners",
+							"column-1": "72.6836471023",
+							"color": "#d46218"
+						}
+					]
+				}
+			);
+		</script>
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv7",
+				{
+					"type": "serial",
+					"categoryField": "category",
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"colorField": "color",
+							"fillAlphas": 1,
+							"id": "AmGraph-1",
+							"lineColorField": "color",
+							"title": "graph 1",
+							"type": "column",
+							"valueField": "column-1"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"title": "No of reviews"
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"titles": [
+						{
+							"id": "Title-1",
+							"size": 12,
+							"text": "No of reviews per month"
+						}
+					],
+					"dataProvider": [
+						{
+							"category": "January",
+							"column-1": 241,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "February",
+							"column-1": 236,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "March",
+							"column-1": 235,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "April",
+							"column-1": 249,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "May",
+							"column-1": 334,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "June",
+							"column-1": 455,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "July",
+							"column-1": 983,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "August",
+							"column-1": 1822,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "September",
+							"column-1": 149,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "Octomber",
+							"column-1": 125,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "November",
+							"column-1": 111,
+							"color": "#2A0CD0"
+						},
+						{
+							"category": "December",
+							"column-1": 201,
+							"color": "#2A0CD0"
+						}
+						
+						
+					]
+				}
+			);
+		</script>
+		
+	</head>
+	<body style="background-image: url('back.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover;opacity: 90%;">
+	<div style="background-color: lightseagreen">
+		<h2 style="text-align: center;"><b><i>Singapore Airbnb Data analysis</b></i></h2>
+	</div>
+	
+	<div>
+	<H3>4.1 - Total number of rentals that are available 365 days a year, and the total number of rentals.(As numbers)</H3>
+	<h4> Total number of rentals : 7921</h4>
+	<h4> Total number of rentals available 365 days: 843</h4>
+	</div>
+	</br>
+	<div>
+	<H3>4.2 - Number of rentals per neighbourhood_group (As a bar chart)</H3>
+		<div id="chartdiv" style="width: 95%; height: 400px; background-color: #FFFFFF;" ></div>		
+	</div>	
+	</br>
+	<div>
+	<H3>4.3 - Average price of Private room rental by neighbourhood_group (As a bar chart)</H3>
+		<div id="chartdiv2" style="width: 95%; height: 400px; background-color: #FFFFFF;" ></div>		
+	</div>	
+	</br>
+	<div>
+	<H3>4.4 - Top 10 neighbourhood based on Average price of Private room (As a table)</H3>
+		<style type="text/css">
+		.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;margin:0px auto;width:90%}
+		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+		.tg .tg-hmp3{background-color:#D2E4FC;text-align:left;vertical-align:top}
+		.tg .tg-baqh{text-align:center;vertical-align:top}
+		.tg .tg-mb3i{background-color:#D2E4FC;text-align:right;vertical-align:top}
+		.tg .tg-lqy6{text-align:right;vertical-align:top}
+		.tg .tg-0lax{text-align:left;vertical-align:top}
+		</style>
+		<table class="tg">
+		  
+		  <tr>
+			<td class="tg-hmp3"><b>Neighbourhood_group</td>
+			<td class="tg-hmp3"><b>Neighbourhood</td>
+			<td class="tg-hmp3"><b>Average price</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-0lax">Southern Islands</td>
+			<td class="tg-lqy6">649.6666666666666</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-hmp3">Central Region</td>
+			<td class="tg-hmp3">Marina South</td>
+			<td class="tg-mb3i">419.0</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">West Region</td>
+			<td class="tg-0lax">Bukit Panjang</td>
+			<td class="tg-lqy6">409.44827586206895</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-hmp3">West Region</td>
+			<td class="tg-hmp3">Jurong East</td>
+			<td class="tg-mb3i">182.25757575757575</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-0lax">Downtown Core</td>
+			<td class="tg-lqy6">163.5047619047619</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-hmp3">Central Region</td>
+			<td class="tg-hmp3">Singapore River</td>
+			<td class="tg-mb3i">150.66666666666666</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-0lax">Orchard</td>
+			<td class="tg-lqy6">146.89795918367346</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-hmp3">Central Region</td>
+			<td class="tg-hmp3">Toa Payoh</td>
+			<td class="tg-mb3i">142.78</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-0lax">Bishan</td>
+			<td class="tg-lqy6">138.92105263157896</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-hmp3">Central Region</td>
+			<td class="tg-hmp3">Outram</td>
+			<td class="tg-mb3i">135.26639344262296</td>
+		  </tr>
+		</table>		
+	</div>	
+	</br>
+	
+	<div>
+	<H3>4.5 - The 5 lowest price rentals per each room_type (As a table)</H3>
+		<style type="text/css">
+		.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;margin:0px auto;width:90%}
+		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+		.tg .tg-hmp3{background-color:#D2E4FC;text-align:left;vertical-align:top}
+		.tg .tg-baqh{text-align:center;vertical-align:top}
+		.tg .tg-mb3i{background-color:#D2E4FC;text-align:right;vertical-align:top}
+		.tg .tg-lqy6{text-align:right;vertical-align:top}
+		.tg .tg-0lax{text-align:left;vertical-align:top}
+		</style>
+		<table class="tg">
+		  
+		  <tr>
+			<td class="tg-hmp3"><b>Room Type</td>
+			<td class="tg-hmp3"><b>Neighbourhood</td>
+			<td class="tg-hmp3"><b>Price</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Shared room</td>
+			<td class="tg-0lax">East Region</td>
+			<td class="tg-lqy6">14</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Shared room</td>
+			<td class="tg-0lax">West Region</td>
+			<td class="tg-lqy6">15</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Shared room</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">18</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Shared room</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">18</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Shared room</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">19</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-0lax">Entire home/apt</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">0</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Entire home/apt</td>
+			<td class="tg-0lax">West Region</td>
+			<td class="tg-lqy6">14</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Entire home/apt</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">14</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Entire home/apt</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">31</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Entire home/apt</td>
+			<td class="tg-0lax">North Region</td>
+			<td class="tg-lqy6">39</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-0lax">Private room</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">14</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Private room</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">15</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Private room</td>
+			<td class="tg-0lax">East Region</td>
+			<td class="tg-lqy6">15</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Private room</td>
+			<td class="tg-0lax">Central Region</td>
+			<td class="tg-lqy6">15</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">Private room</td>
+			<td class="tg-0lax">West Region</td>
+			<td class="tg-lqy6">15</td>
+		  </tr>
+	</table>	  		
+	</div>	
+	</br>
+	<div>
+	<H3>4.6 - Percentage of owners who rent more than one property (As a pie chart)</H3>
+		<div id="chartdiv6" style="width: 95%; height: 400px; background-color: #FFFFFF;" ></div>		
+	</div>	
+	</br>
+	<div>
+	<H3>4.7 - Histogram of number of rentals reviewed over time (based on last_review) in mouth granularity (As a bar chart)</H3>
+		<div id="chartdiv7" style="width: 95%; height: 400px; background-color: #FFFFFF;" ></div>		
+	</div>	
+	</br>
+	<div>
+	<H3>4.8 - Number of rentals that are available all 365 days of the year for each neighbourhood, that are in the neighbourhood which have top 5 average rental prices</H3>
+		<style type="text/css">
+		.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;margin:0px auto;width:90%}
+		.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+		.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+		.tg .tg-hmp3{background-color:#D2E4FC;text-align:left;vertical-align:top}
+		.tg .tg-baqh{text-align:center;vertical-align:top}
+		.tg .tg-mb3i{background-color:#D2E4FC;text-align:right;vertical-align:top}
+		.tg .tg-lqy6{text-align:right;vertical-align:top}
+		.tg .tg-0lax{text-align:left;vertical-align:top}
+		</style>
+		<table class="tg">
+		  
+		  <tr>
+			<td class="tg-hmp3"><b>Neighbourhood_group</td>
+			<td class="tg-hmp3"><b>Neighbourhood</td>
+			<td class="tg-hmp3"><b>Count</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">West Region</td>
+			<td class="tg-0lax">Western Water Catchment</td>
+			<td class="tg-lqy6">1</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-hmp3">West Region</td>
+			<td class="tg-hmp3">Bukit Panjang</td>
+			<td class="tg-mb3i">1</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">North Region</td>
+			<td class="tg-0lax">Woodlands</td>
+			<td class="tg-lqy6">12</td>
+		  </tr>
+		  
+		  <tr>
+			<td class="tg-hmp3">North-East Region</td>
+			<td class="tg-hmp3">Serangoon</td>
+			<td class="tg-mb3i">8</td>
+		  </tr>
+		  <tr>
+			<td class="tg-0lax">North Region</td>
+			<td class="tg-0lax">Lim Chu Kang</td>
+			<td class="tg-lqy6">1</td>
+		  </tr>
+		</table>		
+	</div>	
+	</br>
+	</body>
+</html>
